@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: .5;
+}
+#cardLogin {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.21);
+}
+#cardLogin {  
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    padding: 30px;
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-300%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+  
