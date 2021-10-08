@@ -15,7 +15,7 @@ if(isset($_POST['user_login']))
     $run=mysqli_query($dbcon,$check_user);
     if (mysqli_num_rows($run)) {
 	    echo "<script>alert('You're successfully login!')</script>";
-        echo "<script>window.open('Customers/index.php','_self')</script>";
+        echo "<script>window.open('../src/users/index.php','_self')</script>";
     
         $_SESSION['user_email']=$user_email; 
     } else {
